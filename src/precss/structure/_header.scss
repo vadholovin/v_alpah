@@ -1,0 +1,132 @@
+//
+//-- Header
+//
+
+.page-header {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: #FFF;
+
+  .flex-container {
+    @include row-flex();
+    
+    align-items: center;
+    
+
+    .logo {
+      @include col();
+
+      white-space: nowrap;
+
+      @include xs-block(){
+        margin-right: 0;
+      }
+
+      a{
+        display: block;
+        width: 223px;
+        font-family: Lore, sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        color: #5f2e23;
+        white-space: nowrap;
+      }
+    }
+
+    .page-nav {
+      @include col();
+
+      color: #000;
+      margin-right: 13.5%;
+      margin-left: auto;
+      font-size: 0;
+
+      @include lg-block(){
+        margin-right: 2%;
+      }
+
+      @media (max-width: 992px) {
+        padding-left: 15px;
+        border-left: 1px solid #000;
+      }
+
+      .page-nav__ul {
+        display: block;
+
+        @media (max-width: 992px) {
+          display: none;
+          position: absolute;
+          top: 84px;
+          right: 0;
+          width: 70%;
+          padding: 0;
+          background-color: #fff;
+          z-index: 20;
+        }
+      }
+
+      .page-nav__li {
+        display: inline-block;
+
+        @media (max-width: 992px){
+          display: block;
+          border-bottom: 1px solid #f2f2f2;
+
+          &:last-child{
+            border-bottom: none;
+          }
+        }
+      }
+
+      .page-nav__item {
+        display: block;
+        color: inherit;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: all 0.2s ease;
+        font-size: 16px;
+        padding: 1.375em 1em;
+        
+        @media (max-width: 992px){
+          padding: rem(26) rem(12);
+          font-weight: 700;
+          font-size: 14px;
+        }
+        
+        @include xxs-block(){
+          text-align: left;
+        }
+
+        &:hover {
+        color: #9f5f42;
+        }
+      }
+    }
+  }
+}
+
+.page-nav__hamburger {
+  display: block;
+  display: none;
+
+  @media (max-width: 992px) {
+    display: block;
+    width: 22px;
+    height: 19.5px;
+    vertical-align: middle;
+    background-image: url("../img/ic-nav.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  @include xxs-block(){
+    width: 18px;
+    height: 16px;
+  }
+}
+
+

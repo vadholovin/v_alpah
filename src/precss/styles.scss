@@ -1,0 +1,56 @@
+//
+// Main SCSS file
+//
+
+// load config
+@import 'variables/variables';
+
+// load mixins
+@import 'mixins/mixins_general';
+
+// load base
+@import 'base/typography';
+
+// load modules
+@import 'smart-grid';
+@include reset();
+
+.wrapper {
+  @include wrapper();
+}
+
+// load structure
+@import 'structure/header';
+@import 'structure/sections';
+@import 'structure/footer';
+
+// load pages
+@import 'sections/home';
+@import 'sections/about';
+@import 'sections/benefits';
+@import 'sections/interior';
+@import 'sections/booking';
+@import 'sections/menu';
+@import 'sections/cite';
+@import 'sections/contact';
+
+
+/*
+.debug{
+  @include debug(rgba(0, 0, 0, 0.5), 1px solid #ff0);
+  z-index: 1000;
+}
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html, body {
+  overflow-x: hidden;
+}

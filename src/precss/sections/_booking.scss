@@ -1,0 +1,233 @@
+//
+//-- Booking
+//
+
+.booking {
+  background-color: $color-dark-violet;
+
+  &__title {
+    color: #fff;
+  }
+
+  &__subtitle {
+    margin-bottom: 100px;
+
+    @media (max-width: 1022px){
+      margin-bottom: 60px;
+    }
+
+    @include xs-block(){
+      margin-bottom: 30px;
+    }
+  }
+  
+  .booking__options {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 50px;
+
+    @media (max-width: 1022px){
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    &-item{
+      position: relative;
+      margin-right: 44px;
+      margin-bottom: 26px;
+      font-size: 0;
+      width: 200px;
+
+      @media (max-width: 1022px){
+        width: 60%;
+        margin-right: 0;
+        margin-bottom: 50px;
+      }
+
+      @include sm-block(){
+        width: 80%;
+      }
+
+      @include xs-block(){
+        width: 100%;
+      }
+
+      &:last-child{
+
+        @media (max-width: 1022px){
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .booking__lable {
+      position: absolute;
+      display: block;
+      width: 20px;
+      height: 22px;
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+    }
+
+    .booking--1 {
+      background-image: url("../img/ic-calendar.svg");
+    }
+
+    .booking--2 {
+      background-image: url("../img/ic-hours.svg");
+    }
+
+    .booking--3 {
+      background-image: url("../img/ic-people.svg");
+    }
+
+    .booking--4 {
+      background-image: url("../img/ic-phone.svg");
+    }
+
+    .datepicker-here{
+      height: 30px;
+      outline: none;
+      background-color: transparent;
+      border: 0;
+    }
+    
+    .datepicker-here,
+    .dropdown-toggle {
+      display: block;
+      width: 160px;
+      height: 30px;
+      outline: none;
+      border: 0;
+      margin-left: 40px;
+      padding-bottom: 12px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      border-bottom: 3px solid #fff;
+      cursor:pointer;
+      background-color: transparent;
+      background-image: url("../img/ic-arrow-down.png");
+      background-repeat: no-repeat;
+      background-position: 100% 30%;
+      z-index: 2;
+
+      &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color: #fff;
+      }
+      &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #fff;
+        opacity: 1;
+      }
+      &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #fff;
+        opacity: 1;
+      }
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #fff;
+      }
+      &::-ms-input-placeholder { /* Microsoft Edge */
+        color: #fff;
+      }
+
+      @media (max-width: 1022px){
+        width: calc(100% - 40px);
+      }
+    }
+
+    .booking__phone{
+      cursor: auto;
+      outline: none;
+      background-color: transparent;
+      border-top: 0;
+      border-right: 0;
+      border-left: 0;
+      background-image: none;
+    }
+  }
+
+  .drop--1,
+  .drop--2{
+    z-index: -1;
+    display: none;
+    opacity: 0;
+  }
+
+  .hours.active .drop--1,
+  .people.active .drop--2{
+    display: block;
+    opacity: 1;
+  }
+
+  .hours.active .drop--1{
+    z-index: 10;
+  }
+
+  .people.active .drop--2{
+    z-index: 5;
+  }  
+  
+  .booking__hours-ul,
+  .booking__people-ul {
+    position: absolute;
+    display: block;
+    left: 37px;
+    transform: translate(0, 10px);
+    width: 166px;
+    background-color: #FFF;
+    padding: 14px 30px;
+    border: 3px solid #EDEFF2;
+
+    li {
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      color: $color-dark-blue;
+
+      &:hover{
+        cursor: pointer;
+        font-weight: 700;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .booking__hours-ul{
+    height: 285px;
+    overflow-y: scroll;
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    background-color: #FFF;
+    font-size: 11px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: $color-highlight;
+    line-height: 50px;
+    height: 50px;
+    padding: 0 34px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    
+    &:hover,
+    &:active{
+      opacity: 0.8;
+    }
+
+    &:focus{
+      outline: none;
+    }
+  }
+}

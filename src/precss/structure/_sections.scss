@@ -1,0 +1,67 @@
+//
+//-- General sections
+//
+
+.section {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 64px;
+
+ @media (max-width: 420px){
+    padding-bottom: 45px;
+  }
+
+  &.menu{
+    @media (max-width: 420px){
+      padding-bottom: 120px;
+    }
+  }
+}
+
+.section__title {
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  padding-top: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-bottom: 8px;
+
+  &:before,
+  &:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 1px;
+    width: 100%;
+    background-color: #ebebeb;
+    border: solid #FFF;
+    border-width: 0 2px;
+
+    @media (max-width: 420px){
+      display: none;
+    }
+  }
+
+  &:before {
+    margin-left: -100%;
+  }
+
+  &:after {
+    margin-right: -100%;
+  }
+}
+
+.section__subtitle {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 2.083;
+  letter-spacing: 2px;
+  color: $color-highlight;
+  text-transform: uppercase;
+  text-align: center;
+}
+

@@ -1,0 +1,6 @@
+*.zip
+*.txt
+*.psd
+/psd/*
+/node_modules/*
+/drafts/*

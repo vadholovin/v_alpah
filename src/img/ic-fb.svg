@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:x="adobe:ns:meta/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="33"
+   height="33"
+   viewBox="0 0 33 33"
+   version="1.1"
+   id="svg17"
+   sodipodi:docname="ic-fb.svg"
+   inkscape:version="0.92.1 r15371">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="716"
+     id="namedview19"
+     showgrid="false"
+     inkscape:zoom="7.1515152"
+     inkscape:cx="16.5"
+     inkscape:cy="16.5"
+     inkscape:window-x="-7"
+     inkscape:window-y="-7"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg17" />
+  <metadata
+     id="metadata2">
+<?xpacket begin="ÿ" id="W5M0MpCehiHzreSzNTczkc9d"?>    <x:xmpmeta
+       x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+      <metadata>
+        <rdf:RDF>
+          <rdf:Description
+             rdf:about="" />
+          <cc:Work
+             rdf:about="">
+            <dc:format>image/svg+xml</dc:format>
+            <dc:type
+               rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+          </cc:Work>
+        </rdf:RDF>
+      </metadata>
+    </x:xmpmeta>
+<?xpacket end="w"?>  </metadata>
+  <defs
+     id="defs13">
+    <style
+       id="style4">
+      .cls-1 {
+        fill: #edeff2;
+        stroke: #1e2633;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter
+       id="filter"
+       x="14"
+       y="11"
+       width="5.969"
+       height="12"
+       filterUnits="userSpaceOnUse">
+      <feFlood
+         result="flood"
+         flood-color="#1e2633"
+         id="feFlood6" />
+      <feComposite
+         result="composite"
+         operator="in"
+         in2="SourceGraphic"
+         id="feComposite8" />
+      <feBlend
+         result="blend"
+         in2="SourceGraphic"
+         id="feBlend10" />
+    </filter>
+  </defs>
+  <g
+     id="g23"
+     transform="matrix(1.0000538,0,0,0.99817491,0.96816429,-0.93883465)">
+    <ellipse
+       style="fill:#edeff2;stroke:#1e2633;stroke-width:1.88906062px"
+       rx="15.55547"
+       ry="15.58475"
+       cy="17.47072"
+       cx="15.531"
+       class="cls-1"
+       id="bg_fb" />
+    <path
+       style="fill-rule:evenodd;filter:url(#filter)"
+       transform="matrix(0.94453032,0,0,0.94453032,-0.05375011,1.8859692)"
+       inkscape:connector-curvature="0"
+       d="M 17.978,14.931 V 13.9 A 2.13,2.13 0 0 1 18,13.536 a 0.674,0.674 0 0 1 0.105,-0.251 0.428,0.428 0 0 1 0.265,-0.171 2.033,2.033 0 0 1 0.488,-0.047 h 1.107 V 11 H 18.2 a 3.007,3.007 0 0 0 -2.207,0.681 2.747,2.747 0 0 0 -0.671,2.007 v 1.245 H 13.993 V 17 h 1.325 v 6 h 2.659 v -6 h 1.77 l 0.234,-2.068 h -2 z"
+       class="cls-2"
+       id="fb" />
+  </g>
+</svg>

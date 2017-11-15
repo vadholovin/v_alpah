@@ -1,0 +1,168 @@
+//
+//-- Interior
+//
+
+.interior {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  .flex-container {
+    @include row-flex();
+    align-items: center;
+
+    @media (max-width: 900px){
+      flex-direction: column;
+    }
+  }
+
+  .interior__content {
+    margin-left: auto;
+    margin-right: 80px;
+
+    @media (max-width: 900px){
+      margin: 0 0 50px;
+
+    }
+
+    &-title {
+      margin-bottom: 10px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 36px;
+      letter-spacing: 4px;
+      color: $color-dark-blue;
+    }
+
+    &-subtitle{
+      letter-spacing: 0.5px;
+    }
+  }
+
+  &__gallery {
+    max-width: 498px;
+    min-width: 316px;
+    // margin-right: 160px;
+    margin-right: 13.559322%;
+    text-align: center;
+    font-size: 0;
+    
+    @include md-block(){
+      margin-right: auto;
+    }
+
+    @media (max-width: 900px){
+      margin: 0;
+    }
+
+    &-item {
+      display: inline-block;
+      margin: 8px;
+
+      @include xxs-block(){
+        margin: 4px;
+      }
+    }
+  }
+}
+
+/* MODAL IMAGES */
+
+.modal-btn {
+  cursor: pointer;
+}
+
+#modal-toggle--1,
+#modal-toggle--2,
+#modal-toggle--3,
+#modal-toggle--4,
+#modal-toggle--5,
+#modal-toggle--6 {
+  display: none;
+}
+
+.modal-content,
+.modal-backdrop {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  z-index: -1;
+  
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.modal-content {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 80%;
+  max-width: 900px;
+
+  &--vert{
+    max-width: 600px;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img{
+    display: block;
+    cursor: pointer;
+  } 
+}
+
+.modal-backdrop {
+  left: 0;
+  top: 0;
+  
+  height: 100vh;
+  width: 100vw;
+}
+
+#modal-toggle--1:checked ~ .modal-backdrop,
+#modal-toggle--2:checked ~ .modal-backdrop,
+#modal-toggle--3:checked ~ .modal-backdrop,
+#modal-toggle--4:checked ~ .modal-backdrop,
+#modal-toggle--5:checked ~ .modal-backdrop,
+#modal-toggle--6:checked ~ .modal-backdrop {
+  opacity: 1;
+  z-index: 9998;
+  background-color: rgba(0,0,0,0.8);
+}
+
+#modal-toggle--1:checked ~ .modal-content,
+#modal-toggle--2:checked ~ .modal-content,
+#modal-toggle--3:checked ~ .modal-content,
+#modal-toggle--4:checked ~ .modal-content,
+#modal-toggle--5:checked ~ .modal-content,
+#modal-toggle--6:checked ~ .modal-content {
+  opacity: 1;
+  z-index: 9999;
+  pointer-events: auto;
+  cursor: auto;
+}
+
+.modal-close-btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  top: -40%;
+  left: 50%;
+
+  svg {
+    transition: 0.2s;
+    
+    line {
+      stroke-width: 5px;
+      stroke: rgba(255,255,255,0.5);
+    }
+  }
+  
+  &:hover svg {
+    transform: rotate(90deg);
+  }
+}

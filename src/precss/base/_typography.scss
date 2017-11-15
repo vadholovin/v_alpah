@@ -1,0 +1,14 @@
+//
+//-- General Typography
+//
+
+html, body {
+	background: #FFF;
+	color: $color-base;
+}
+
+body, input, select, textarea, button {
+	font-family: "GothamPro", sans-serif;
+	font-size: 100%;
+  line-height: 1;
+}

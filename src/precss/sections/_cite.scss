@@ -1,0 +1,93 @@
+//
+//-- Cite
+//
+
+.cite {
+
+  .cite-bkg{
+    background-color: #f7f7f7;
+  }
+
+  .wrapper {
+    height: 450px;
+    padding-top: 110px;
+    position: relative;
+
+    @include sm-block(){
+      height: 500px;
+      padding-top: 320px;
+    }
+  }
+
+  .cite__content{
+    margin-left: 8.22%;
+    z-index: 1;
+    max-width: 40%;
+
+    @include md-block(){
+      margin-left: 7%;
+    }
+
+    @include sm-block(){
+      max-width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  .cite__content-text {
+    font-size: 25px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    color: $color-dark-blue;
+
+    @include md-block(){
+      font-size: 20px;
+    }
+
+    @include sm-block(){
+      font-size: 16px;
+      line-height: 2;
+      margin-bottom: 20px;
+    }
+
+    @include xs-block(){
+      font-size: 14px;
+    }
+  }
+
+  .cite__content-author{
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $color-dark-blue;
+  }
+  
+  .cite__content-img{
+    display: block;
+    position: absolute;
+    width: 354px;
+    bottom: 40px;
+    right: 13.559322%;
+
+    @include md-block(){
+      width: 300px;
+      right: 10%;
+    }
+
+    @include sm-block(){
+      width: 254px;
+      bottom: 200px;
+    }
+
+    @include xs-block(){
+      left: 50%;
+      right: 0;
+      transform: translateX(-50%);
+    }
+  }
+
+}
+
