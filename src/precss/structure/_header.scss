@@ -56,13 +56,13 @@
 
         @media (max-width: 992px) {
           display: none;
-          position: absolute;
-          top: 84px;
-          right: 0;
-          width: 70%;
-          padding: 0;
-          background-color: #fff;
-          z-index: 20;
+          // position: absolute;
+          // top: 84px;
+          // right: 0;
+          // width: 70%;
+          // padding: 0;
+          // background-color: #fff;
+          // z-index: 20;
         }
       }
 
@@ -100,7 +100,7 @@
         }
 
         &:hover {
-        color: #9f5f42;
+          color: #9f5f42;
         }
       }
     }
@@ -128,5 +128,61 @@
     height: 16px;
   }
 }
+
+
+.dark__body {
+  display: none;
+
+  @media (max-width: 992px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.69);
+    z-index: 9999999999;
+  }
+}
+
+.dark__menu {
+  display: none;
+
+  @media (max-width: 992px) {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: white;
+    z-index: 99999999999;
+    width: 200px;
+  }
+
+  .page-nav__item{
+    
+    &:hover {
+      color: #9f5f42;
+    }
+
+    @media (max-width: 992px){
+      display: inline-block;
+      padding: rem(26) rem(12);
+      font-weight: 700;
+      // font-size: 14px;
+      text-align: left;
+    }
+  }
+
+  .page-nav__li{
+    @media (max-width: 992px){
+      display: block;
+      border-bottom: 1px solid #f2f2f2;
+
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+  }
+
+}
+
 
 

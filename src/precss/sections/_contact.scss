@@ -111,6 +111,10 @@
       height: 37px;
       overflow: hidden;
       resize: none;
+
+      &:focus{
+        height: 150px;
+      }
     }
 
     .contact-form__button{

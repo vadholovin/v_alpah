@@ -32,17 +32,16 @@
 
 // -- NAV-HAMBURGER
 
-(function() {
-
-  $('.page-nav__hamburger').on('click', function() {
-    $('.page-nav__ul').slideToggle(300, function() {
-      if($(this).css('display') === 'none') {
-        $(this).removeAttr('style');
-      }
-    });
+$('document').ready(function() {
+  $('.page-nav__hamburger').click(function() {
+    $('.dark__body').show(0);
+    $('.dark__menu').show(200);
   });
-  
-})();
+  $('.dark__body').click(function() {
+    $('.dark__menu').hide(0);
+    $('.dark__body').hide(0);
+  });
+});
 
 // -- SCROLL PADE TO ID
 
@@ -156,4 +155,3 @@ $(document).ready(function(){
   });
 });
 
-  
