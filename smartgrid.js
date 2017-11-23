@@ -6,7 +6,7 @@ const settings = {
   columns: 15,
   offset: '20px',
   container: {
-    maxWidth: '1180px',
+    maxWidth: '1280px',
     fields: '0'
   },
   oldSizeStyle: false,
